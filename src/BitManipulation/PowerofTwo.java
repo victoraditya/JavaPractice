@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class IsPowerofTwo {
+public class PowerofTwo {
 
     public static void main(String[] args) {
         Integer i = 4;
@@ -9,8 +9,6 @@ public class IsPowerofTwo {
     }
 
     private static boolean isPowerOfTwo(int number) {
-     //   return ((number & (number -1)) == 0);
-        return ((number & (number -1)) == 0);
-     //   return (i & ((i & (i-1))==0));
+        return ((number & (number - 1)) == 0);
     }
 }

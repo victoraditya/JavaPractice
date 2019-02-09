@@ -7,6 +7,7 @@ public class EvenOdd {
         isEvenOrOdd(x);
     }
 
+    /*testing PR */
     private static void isEvenOrOdd(Integer x) {
 
          if((1 & x) == 0)

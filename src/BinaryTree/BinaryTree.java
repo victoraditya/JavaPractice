@@ -12,7 +12,7 @@ class Node {
 
 public class BinaryTree {
 
-    Node node;
+    static Node node;
 
     BinaryTree() {
         node = null;
@@ -35,13 +35,14 @@ public class BinaryTree {
         System.out.println("Is tree BST?" + isBst(node));
     }
 
-    private static boolean isBst(Nod binaryTree) {
+    private static boolean isBst(Node binaryTree) {
         int min = Integer.MIN_VALUE;
         int max = Integer.MAX_VALUE;
         isBstUtil(binaryTree, min, max);
         if (binaryTree == null) {
             return true;
         }
+        return false;
     }
 
     private static boolean isBstUtil(Node node, int min, int max) {
